@@ -1,0 +1,35 @@
+<template name="components_issuer_balance">
+    <div class="panel panel-default panel-dapp">
+        <div class="panel-heading">
+            Issuer Account Details
+        </div>
+      	<br>
+        <div class="row">
+            <div class="col-md-10">
+            {{#with TemplateVar.get 'validate'}}
+                {{#if error}}
+                    <div class="alert alert-warning">
+                       Please enter a valid address!
+                    </div>
+                {{/if}}
+                {{/with}}
+               <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="Issuer" class="col-sm-4 control-label">Issuer</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="Issuer" class="form-control" value="" placeholder="Address" />
+                    </div> 
+                    <div class="col-sm-4">
+                        <button type="button" id="refresh" style="position: relative;top: 0px;left: 0%;" class="btn btn-info  btn-deploy">Refresh
+                         </button>
+                    </div>
+                </div>
+                </form>
+                </div>
+        </div>
+        <hr>
+        <div class="panel-body">
+            <h4>Account Balance:<strong>{{ watchBalance }}</strong> coins</h4>
+        </div>
+    </div>
+</template>

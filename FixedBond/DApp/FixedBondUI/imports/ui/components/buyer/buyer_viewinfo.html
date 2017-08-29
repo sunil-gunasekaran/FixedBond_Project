@@ -1,0 +1,36 @@
+<template name="components_buyer_viewinfo">
+    <div class="panel panel-default panel-dapp">
+        <div class="panel-heading">
+           Purchased Bonds
+        </div>
+        <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Issuer</td>
+                        <td>Name</td>
+                        <td>No Of Bonds</td>
+                        <td>Purchase Price</td>
+                        <td>Maturity Amount</td>
+                    </tr>
+                </thead>
+                <tbody>
+                 {{#with TemplateVar.get 'state'}}
+                 {{#if list}}
+                <tr>
+                        <td>{{Issuer}}</td>
+                        <td>{{BondName}}</td>
+                        <td>{{Bonds}}</td>
+                        <td>{{PurchasePrice}}</td>
+                        <td>{{MaturityAmt}}</td>
+                </tr>
+                {{/if}}
+                {{/with}}
+               </tbody>
+            </table>
+
+        </div>
+        </div>
+     </div>
+</template>

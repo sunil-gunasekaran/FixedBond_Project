@@ -1,0 +1,112 @@
+<template name="components_issuer">
+    <div class="panel panel-default panel-dapp">
+	<div class="panel-heading">
+		Issue Fixed Price Bond Contract
+	</div>
+      <div class="panel-body">
+             {{#with TemplateVar.get 'state'}}
+                {{#if isError}}
+                    <div class="alert alert-warning">
+                        There was an error deploying your contract.
+                        The error was: "{{error}}".
+                    </div>
+                {{/if}}
+            
+                {{#if isMining}}
+                    <div class="alert alert-info">
+                        Your contract is being mined...
+                        <span class="badge text-right">
+                            <i class="fa fa-cog fa-spin"></i>
+                        </span>
+                    </div>
+                {{/if}}
+            
+                {{#if isMined}}
+                    <div class="alert alert-info">
+                        Fixed Price Contract has been issued!
+                    </div>
+            
+                    <hr />
+            
+                    <label>
+                        Your contract has been deployed to this address:
+                    </label>
+            
+                    <input type="text" class="form-control" 
+                           value="{{address}}" placeholder="Address" />
+            
+                    <br />
+            	{{/if}}
+
+            {{/with}} 
+
+	<div class="row">
+        <div class="col-md-12">
+        <form class="form-horizontal">
+
+        <div class="form-group">
+            <label for="bondName" class="col-sm-4 control-label">Name</label>
+            <div class="col-sm-4">
+                <input type="text" id="bondName" class="form-control" value="" placeholder="Bond Name" />
+            </div>
+        </div>
+		
+		<div class="form-group">
+			<label for="BondsToIssue" class="col-sm-4 control-label">No Of Bonds</label>
+			<div class="col-sm-4">
+				<input type="text" id="BondsToIssue" class="form-control" value="" placeholder="No of Bonds" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="UnitPrice" class="col-sm-4 control-label">Unit Price</label>
+			<div class="col-sm-4">
+				<input type="text" id="UnitPrice" class="form-control" value="" placeholder="Unit Price" />
+			</div>
+		</div> 
+
+        <div class="form-group">
+            <label for="InterestRate" class="col-sm-4 control-label">Interest Rate</label>
+            <div class="col-sm-4">
+                <input type="text" id="InterestRate" class="form-control" value="" placeholder="Interest Rate" />
+            </div>
+        </div> 
+
+    <!--    <div class="form-group">
+            <label for="fileHash" class="col-sm-4 control-label">Maturity Amount</label>
+            <div class="col-sm-4">
+                <input type="text" id="MaturityAmount" class="form-control" value="" placeholder="Payable On Maturity" />
+            </div>
+        </div> -->
+
+        <div class="form-group">
+            <label for="PaymentDate1" class="col-sm-4 control-label">First Payment Date</label>
+            <div class="col-sm-4">
+                <input type="date" id="PaymentDate1" class="form-control" value="" placeholder="First Payment Date" />
+            </div>
+        </div> 
+          <div class="form-group">
+            <label for="PaymentDate2" class="col-sm-4 control-label">Second Payment Date</label>
+            <div class="col-sm-4">
+                <input type="date" id="PaymentDate2" class="form-control" value="" placeholder="Second Payment Date" />
+            </div>
+        </div> 
+          <div class="form-group">
+            <label for="PaymentDate3" class="col-sm-4 control-label">Final Payment Date</label>
+            <div class="col-sm-4">
+                <input type="date" id="PaymentDate3" class="form-control" value="" placeholder="Final Payment Date" />
+            </div> 
+        </div> 
+	
+		<div class="form-group">
+			<div class="col-sm-5">
+    				<button type="button" id="issueFPBondContract" style="position: relative;top: 10px;left: 80%;" class="btn btn-info 	btn-deploy">Issue Fixed Price Bond
+			         </button>
+    			</div>
+    		</div>
+	</form>
+	</div>
+	</div>
+    </div>
+    </div>
+</template>

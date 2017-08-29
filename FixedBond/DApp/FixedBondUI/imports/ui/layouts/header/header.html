@@ -1,0 +1,40 @@
+<template name="header">
+<style>
+.navbar-default {
+    background-color: #2980b9;
+    border-color:#2980b9
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+</style>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/" style="font-weight:800">
+                   FIXED PRICE BOND DEMO
+                </a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+
+      <li>
+                    <a href="{{pathFor 'App.Admin'}}" style="color: #ffffff;">
+                       Admin
+                    </a>
+        </li>
+				<li>
+                    <a href="{{pathFor 'App.Issuer'}}" style="color: #ffffff;">
+                       Issuer
+                    </a>
+        </li>
+				<li>
+                    <a href="{{pathFor 'App.Buyer'}}" style="color: #ffffff;">
+                       Buyer
+                    </a>
+                </li>
+			</ul>
+		</div>
+	</nav>
+</template>

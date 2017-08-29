@@ -1,0 +1,15 @@
+Installation
+
+sudo apt-get install software-properties-common 
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update 
+sudo apt-get install ethereum
+sudo apt-get -y install solc
+
+--ipcapi "http,admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --solc "/usr/bin/solc" --networkid 1545 
+
+geth --datadir "/home/blockchain/projects/FixedBond/FBPrivateNetwork/Chain/DataDir/0530" init CustomGenesis.json
+
+geth --identity "FBPN" --networkid 1545 --rpc --rpcaddr "localhost" --rpcport "8001" --rpccorsdomain "*" --rpcapi "http,eth,net,web3,admin,miner,txpool,personal,shh" --ipcpath "/home/adminuser/FixedBond/FBPrivateNetwork/Chain/.ethereum/geth.ipc" --port "40001" --maxpeers 3 --nodiscover --unlock 0,1 --datadir "/home/adminuser/FixedBond/FBPrivateNetwork/Chain/DataDir/0530" console
+
+

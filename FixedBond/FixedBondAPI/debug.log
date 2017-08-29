@@ -1,0 +1,330 @@
+Node server started!
+Node server started!
+Contract {
+  _eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  transactionHash: '0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798',
+  address: '0x3d1e90139dd69de4c223898c6afca56845747f39',
+  abi: 
+   [ { constant: true,
+       inputs: [Object],
+       name: 'isAuthorized',
+       outputs: [Object],
+       payable: false,
+       type: 'function' } ],
+  isAuthorized: 
+   { [Function: bound ]
+     request: [Function: bound ],
+     call: [Function: bound ],
+     sendTransaction: [Function: bound ],
+     estimateGas: [Function: bound ],
+     getData: [Function: bound ],
+     address: [Circular] },
+  allEvents: [Function: bound ] }
+KYC Registry Created! address: 0x3d1e90139dd69de4c223898c6afca56845747f39 transactionHash: 0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798
+Node server started!
+Fixed Bond Price contract has been issued at address: 0x5724482bc34f7815c4fe8ca2a5bc62e5880ca6a1 transactionHash: 0xd15355ee29a01e34a6e39a91a8ad4d8cff0874d8039f76e9690117ade72353f0
+Node server started!
+{ address: '0x5724482bc34f7815c4fe8ca2a5bc62e5880ca6a1',
+  blockNumber: 346,
+  transactionHash: '0x5a74a88509d6afd36c68c34f09b0beed2d45c92c412a5c337af152aadda2e611',
+  transactionIndex: 0,
+  blockHash: '0x326ba830365f9580528f5a3884a758d02ad2f30f1c406dfcf9b14b4cf20c4b70',
+  logIndex: 0,
+  removed: false,
+  event: 'ErrorTransactionMessage',
+  args: { reason: { [String: '0'] s: 1, e: 0, c: [Object] } } }
+Fixed Bond Price contract has been issued at address: 0x26fb8949fcb9e7cdba6492331454334a9455eeec transactionHash: 0x83d215b62b0227d5d04ff51c4d58d5203bc9a6a19722fd42fbb7a3c9958b64df
+Node server started!
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+{ address: '0x26fb8949fcb9e7cdba6492331454334a9455eeec',
+  blockNumber: 578,
+  transactionHash: '0x6e7435fb26073ed16dbba26c18c6119d1b86e3725dd3bc7c69383630745c880d',
+  transactionIndex: 0,
+  blockHash: '0x85aeb78502bd5a4cde3da0cdb27e41cfad71ca1efe67544f8e4902955fbe50ee',
+  logIndex: 0,
+  removed: false,
+  event: 'ErrorTransactionMessage',
+  args: { reason: { [String: '1502953200000'] s: 1, e: 12, c: [Object] } } }
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+Node server started!
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+{ [String: '1502953200000'] s: 1, e: 12, c: [ 1502953200000 ] }
+{ [String: '1503039600000'] s: 1, e: 12, c: [ 1503039600000 ] }
+1502908200000
+{ address: '0x26fb8949fcb9e7cdba6492331454334a9455eeec',
+  blockNumber: 704,
+  transactionHash: '0xcf82b1ea1f110fd6e1c94eb27797936dd6effb297b5c7893e4c95f12fda4b88a',
+  transactionIndex: 0,
+  blockHash: '0x940b09dc282b06924ab89785ce00736ea34b1b651a034de1fd8b034a05b5797a',
+  logIndex: 0,
+  removed: false,
+  event: 'ErrorTransactionMessage',
+  args: { reason: { [String: '1502953200000'] s: 1, e: 12, c: [Object] } } }
+Node NOT Exiting...
+Node server started!
+Contract {
+  _eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: [Object], timeout: [Object] },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  transactionHash: '0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798',
+  address: '0x3d1e90139dd69de4c223898c6afca56845747f39',
+  abi: 
+   [ { constant: true,
+       inputs: [Object],
+       name: 'isAuthorized',
+       outputs: [Object],
+       payable: false,
+       type: 'function' } ],
+  isAuthorized: 
+   { [Function: bound ]
+     request: [Function: bound ],
+     call: [Function: bound ],
+     sendTransaction: [Function: bound ],
+     estimateGas: [Function: bound ],
+     getData: [Function: bound ],
+     address: [Circular] },
+  allEvents: [Function: bound ] }
+KYC Registry Created! address: 0x3d1e90139dd69de4c223898c6afca56845747f39 transactionHash: 0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798
+Fixed Bond Price contract has been issued at address: 0x5724482bc34f7815c4fe8ca2a5bc62e5880ca6a1 transactionHash: 0x5c5b0e788f012ca03e635f9f76e23813768469e479cd310b130b4b5e09d8a293
+Node server started!
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1502908200000'] s: 1, e: 12, c: [ 1502908200000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+Node server started!
+Contract {
+  _eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  transactionHash: '0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798',
+  address: '0x3d1e90139dd69de4c223898c6afca56845747f39',
+  abi: 
+   [ { constant: true,
+       inputs: [Object],
+       name: 'isAuthorized',
+       outputs: [Object],
+       payable: false,
+       type: 'function' } ],
+  isAuthorized: 
+   { [Function: bound ]
+     request: [Function: bound ],
+     call: [Function: bound ],
+     sendTransaction: [Function: bound ],
+     estimateGas: [Function: bound ],
+     getData: [Function: bound ],
+     address: [Circular] },
+  allEvents: [Function: bound ] }
+KYC Registry Created! address: 0x3d1e90139dd69de4c223898c6afca56845747f39 transactionHash: 0x7b7cd8041c6cd3bff8c4930f1701d08da33289311520135cb31271d03cc5f798
+Fixed Bond Price contract has been issued at address: 0x5724482bc34f7815c4fe8ca2a5bc62e5880ca6a1 transactionHash: 0x3c9dea5165075a3ef126df2449d2074b247ea7bbc3e4c366c245e38d89853955
+Node server started!
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }
+{ [String: '1502994600000'] s: 1, e: 12, c: [ 1502994600000 ] }
+{ [String: '1503081000000'] s: 1, e: 12, c: [ 1503081000000 ] }

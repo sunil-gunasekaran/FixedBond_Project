@@ -1,0 +1,121 @@
+<template name="components_issuer_bondinfo">
+    <div class="panel panel-default panel-dapp">
+        <div class="panel-heading">
+           Issued Bonds
+        </div>
+        <div class="panel-body">
+         {{#with TemplateVar.get 'state'}}
+                {{#if isError}}
+                    <div class="alert alert-warning">
+                       Error while making payments.
+                       The error was {{error}}
+                    </div>
+                {{/if}}
+            
+                {{#if inProcess}}
+                    <div class="alert alert-info">
+                        Processing Payments
+                        <span class="badge text-right">
+                            <i class="fa fa-cog fa-spin"></i>
+                        </span>
+                    </div>
+                {{/if}}
+            
+                {{#if isSuccess}}
+                    <div class="alert alert-info">
+                        The contract has successfully paid {{FundValue}} coins to buyers on {{PaidDate}}.
+                    </div>
+            
+                    <hr /> 
+                    <br />
+                {{/if}}
+            {{/with}} 
+      
+         <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Issue Price</td>
+                        <td>Interest Rate</td>
+                        <td>Repayment Amount</td>
+                        <td>Unsold Bonds</td>
+                        <td>First Payment On</td>
+                        <td>Second Payment On</td>
+                        <td>Final Payment On</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#with TemplateVar.get 'IssuerBonds'}}
+               
+                <tr>
+                        <td>{{BondName}}</td>
+                        <td>{{IssuePrice}}</td>
+                        <td>{{InterestRate}}</td>
+                        <td>{{Repayment}}</td>
+                        <td>{{AvailableBonds}}</td>
+                        <td>{{FirstPayment}}</td>
+                        <td>{{SecondPayment}}</td>
+                        <td>{{FinalPayment}}</td>
+                </tr>
+                {{/with}}
+               </tbody>
+            </table>
+
+        </div>
+       
+        <div class="row">
+            <div class="col-md-12">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-5">
+                        <button type="button" id="btnBuyersList" style="position: relative;top: 10px;left: 80%;" class="btn btn-info  btn-deploy">View Buyers List
+                         </button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        {{#with TemplateVar.get 'showBuyers'}}
+        {{#if show}}
+        <div class="panel panel-default panel-dapp">
+        <div class="panel-heading">
+           Buyers 
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Buyer</td>
+                        <td>No Of Bonds</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each getBuyersList}}
+               
+                <tr>
+                        <td>{{Buyer}}</td>
+                        <td>{{BondCount}}</td>
+                </tr>
+                {{/each}}
+               </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-5">
+                        <button type="button" id="makePayment" style="position: relative;top: 10px;left: 80%;" class="btn btn-info  btn-deploy">Make Payments
+                         </button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        {{/if}}
+        {{/with}}
+        </div>
+     </div>
+</template>

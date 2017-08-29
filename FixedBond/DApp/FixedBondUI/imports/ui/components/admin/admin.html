@@ -1,0 +1,58 @@
+<template name="components_admin">
+    <div class="panel panel-default panel-dapp">
+	<div class="panel-heading">
+		Create KYC Registry
+	</div>
+      <div class="panel-body">
+             {{#with TemplateVar.get 'state'}}
+                {{#if isError}}
+                    <div class="alert alert-warning">
+                        There was an error deploying your contract.
+                        The error was: "{{error}}".
+                    </div>
+                {{/if}}
+            
+                {{#if isMining}}
+                    <div class="alert alert-info">
+                        Your contract is being mined...
+                        <span class="badge text-right">
+                            <i class="fa fa-cog fa-spin"></i>
+                        </span>
+                    </div>
+                {{/if}}
+            
+                {{#if isMined}}
+                    <div class="alert alert-info">
+                        KYC Registry has been created!
+                    </div>
+            
+                    <hr />
+            
+                    <label>
+                        Your contract has been deployed to this address:
+                    </label>
+            
+                    <input type="text" class="form-control" 
+                           value="{{address}}" placeholder="Address" />
+            
+                    <br />
+            	{{/if}}
+
+            {{/with}} 
+
+	<div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal">
+		<div class="form-group">
+			<div class="col-sm-5">
+    				<button type="button" id="createKYCRegbtn" style="position: relative;top: 10px;left: 80%;" class="btn btn-info btn-deploy">CREATE KYC REGISTRY
+			</button>
+    			</div>
+			
+    		</div>
+	</form>
+	</div>
+	</div>
+    </div>
+    </div>
+</template>

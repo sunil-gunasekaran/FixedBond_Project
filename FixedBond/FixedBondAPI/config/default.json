@@ -1,0 +1,7 @@
+{
+	"contractaddress": "0x5724482bc34f7815c4fe8ca2a5bc62e5880ca6a1",
+	"KYCRegistryaddress": "0x3d1e90139dd69de4c223898c6afca56845747f39",
+	"env": "dev",
+	"logpath":"/home/blockchain/projects/FixedBond/FixedBondAPI/debug.log"
+}
+

@@ -1,0 +1,62 @@
+<template name="components_buyer_purchase">
+    <div class="panel panel-default panel-dapp">
+	<div class="panel-heading">
+		Purchase Fixed Price Bond
+	</div>
+      <div class="panel-body">
+             {{#with TemplateVar.get 'state'}}
+                {{#if isError}}
+                    <div class="alert alert-warning">
+                        An error occured when purchasing the bond.
+                        The error was: "{{error}}".
+                    </div>
+                {{/if}}
+            
+                {{#if inProcess}}
+                    <div class="alert alert-info">
+                        Purchase is in progress
+                        <span class="badge text-right">
+                            <i class="fa fa-cog fa-spin"></i>
+                        </span>
+                    </div>
+                {{/if}}
+            
+                {{#if isSuccess}}
+                    <div class="alert alert-info">
+                        You have successfully purchased {{bondscount}} bond(s) for {{bondValue}} coins.
+                    </div>
+            
+                    <hr /> 
+                    <br />
+            	{{/if}}
+            {{/with}} 
+
+	<div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal">
+		
+		<div class="form-group">
+			<label for="BondsToBuy" class="col-sm-4 control-label">No Of Bonds</label>
+			<div class="col-sm-4">
+				<input type="text" id="BondsToBuy" class="form-control" value="" placeholder="No of Bonds" />
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="Amount" class="col-sm-4 control-label">Amount</label>
+			<div class="col-sm-4">
+				<input type="text" id="amount" class="form-control" value="" placeholder="Amount" />
+			</div>
+		</div> 
+		<div class="form-group">
+			<div class="col-sm-5">
+    				<button type="button" id="buyBond" style="position: relative;top: 10px;left: 80%;" class="btn btn-info 	btn-deploy">Buy Bond
+			         </button>
+    			</div>
+    		</div>
+	</form>
+	</div>
+	</div>
+    </div>
+    </div>
+</template>
